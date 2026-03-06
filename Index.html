@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop Anywhere</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6fb;
+}
+
+header{
+background:#34495e;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+nav{
+background:white;
+text-align:center;
+padding:10px;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav a{
+margin:10px;
+cursor:pointer;
+font-weight:bold;
+}
+
+section{
+display:none;
+padding:20px;
+text-align:center;
+}
+
+#home{
+display:block;
+}
+
+.tagline{
+font-size:18px;
+color:#555;
+margin:15px;
+}
+
+.category-btn{
+padding:12px 20px;
+margin:10px;
+border:none;
+background:#3498db;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.product{
+background:white;
+width:200px;
+padding:10px;
+margin:10px;
+display:inline-block;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.product img{
+width:100%;
+border-radius:8px;
+}
+
+.old{
+text-decoration:line-through;
+color:red;
+}
+
+.discount{
+color:orange;
+}
+
+.new{
+color:green;
+font-weight:bold;
+}
+
+.buy{
+background:#25D366;
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+input,textarea{
+width:90%;
+padding:10px;
+margin:5px;
+}
+
+</style>
+
+
+<script>
+
+function showSection(id){
+
+document.querySelectorAll("section").forEach(sec=>sec.style.display="none");
+
+document.getElementById(id).style.display="block";
+
+}
+
+</script>
+
+</head>
+
+
+<body>
+
+<header>
+
+<h1>Shop Anywhere</h1>
+
+<p>Walk with Style – Premium Footwear for Every Step</p>
+
+</header>
+
+
+<nav>
+
+<a onclick="showSection('home')">Home</a>
+
+<a onclick="showSection('about')">About</a>
+
+<a onclick="showSection('contact')">Contact</a>
+
+<a onclick="showSection('category')">Category</a>
+
+</nav>
+
+
+<!-- HOME -->
+
+<section id="home">
+
+<h2>Welcome to Shop Anywhere</h2>
+
+<p class="tagline">
+Discover the latest collection of stylish footwear for Women, Men and Kids.  
+Trendy designs, premium quality and best prices all in one place.
+</p>
+
+<p class="tagline">
+Step into comfort and style with our exclusive footwear collection.  
+From elegant heels to casual sneakers, we have something perfect for everyone.
+</p>
+
+<p class="tagline">
+✔ Latest Fashion Footwear  
+✔ Affordable Prices  
+✔ Exciting Discounts Every Day  
+✔ Quality You Can Trust
+</p>
+
+<p class="tagline">
+Upgrade your footwear collection today and walk with confidence.  
+Shop Anywhere – where fashion meets comfort.
+</p>
+
+</section>
+
+
+<!-- CATEGORY -->
+
+<section id="category">
+
+<h2>Our Footwear Categories</h2>
+
+<p class="tagline">
+Explore stylish and comfortable footwear collections designed for every occasion.
+</p>
+
+<button class="category-btn" onclick="showSection('women')">Women</button>
+
+<button class="category-btn" onclick="showSection('men')">Men</button>
+
+<button class="category-btn" onclick="showSection('kids')">Kids</button>
+
+</section>
+
+
+
+<!-- WOMEN -->
+
+<section id="women">
+
+<h2>Women Footwear</h2>
+
+<p class="tagline">Elegant and stylish footwear collection for modern women.</p>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2">
+
+<h4>Heels</h4>
+
+<p class="old">₹2000</p>
+
+<p class="discount">20% OFF</p>
+
+<p class="new">₹1600</p>
+
+<button class="buy">Buy Now</button>
+
+</div>
+
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1595341595379-cf0f3c4dbe1c">
+
+<h4>Sleeper</h4>
+
+<p class="old">₹900</p>
+
+<p class="discount">10% OFF</p>
+
+<p class="new">₹810</p>
+
+<button class="buy">Buy Now</button>
+
+</div>
+
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77">
+
+<h4>Shoes</h4>
+
+<p class="old">₹1800</p>
+
+<p class="discount">15% OFF</p>
+
+<p class="new">₹1530</p>
+
+<button class="buy">Buy Now</button>
+
+</div>
+
+</section>
+
+
+
+<!-- MEN -->
+
+<section id="men">
+
+<h2>Men Footwear</h2>
+
+<p class="tagline">Comfortable and stylish shoes for everyday wear.</p>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+
+<h4>Shoes</h4>
+
+<p class="old">₹2500</p>
+
+<p class="discount">25% OFF</p>
+
+<p class="new">₹1875</p>
+
+<button class="buy">Buy Now</button>
+
+</div>
+
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+
+<h4>Sneakers</h4>
+
+<p class="old">₹2200</p>
+
+<p class="discount">20% OFF</p>
+
+<p class="new">₹1760</p>
+
+<button class="buy">Buy Now</button>
+
+</div>
+
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5">
+
+<h4>Sleeper</h4>
+
+<p class="old">₹800</p>
+
+<p class="discount">10% OFF</p>
+
+<p class="new">₹720</p>
+
+<button class="buy">Buy Now</button>
+
+</div>
+
+</section>
+
+
+
+<!-- KIDS -->
+
+<section id="kids">
+
+<h2>Kids Footwear</h2>
+
+<p class="tagline">Colorful and comfortable footwear designed for kids.</p>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1600180758895-683c8a9b2a98">
+
+<h4>Shoes</h4>
+
+<p class="old">₹1500</p>
+
+<p class="discount">20% OFF</p>
+
+<p class="new">₹1200</p>
+
+<button class="buy">Buy Now</button>
+
+</div>
+
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+
+<h4>Sneakers</h4>
+
+<p class="old">₹1300</p>
+
+<p class="discount">15% OFF</p>
+
+<p class="new">₹1105</p>
+
+<button class="buy">Buy Now</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Our Shop</h2>
+
+<p>
+Shop Anywhere is a trusted footwear store offering stylish and comfortable shoes for Women, Men and Kids.
+Our goal is to provide high quality footwear with modern designs at affordable prices.
+</p>
+
+<h3>Customer Reviews</h3>
+
+<p>⭐ ⭐ ⭐ ⭐ ⭐ Excellent quality footwear.</p>
+
+<p>⭐ ⭐ ⭐ ⭐ Stylish and affordable collection.</p>
+
+<p>⭐ ⭐ ⭐ ⭐ ⭐ Best footwear shop with latest trends.</p>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Shopkeeper: ______</p>
+
+<p>Phone: 9876543210</p>
+
+<p>Email: shopanywhere@gmail.com</p>
+
+<h3>Contact Form</h3>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Message"></textarea>
+
+<br>
+
+<button>Send Message</button>
+
+</form>
+
+</section>
+
+</body>
+</html>
